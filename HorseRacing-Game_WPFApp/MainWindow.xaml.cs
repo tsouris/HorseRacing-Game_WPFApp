@@ -4,12 +4,8 @@ using System.Windows.Controls;
 
 namespace HorseRacing_Game_WPFApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        private int[] progressValues = { 0, 0, 0, 0, 0 };
         private bool raceStarted = false;
         public MainWindow()
         {
@@ -37,40 +33,7 @@ namespace HorseRacing_Game_WPFApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (raceStarted)
-            {
-                Button clickedButton = (Button)sender;
-
-                int buttonIndex = int.Parse(clickedButton.Content.ToString()) - 1;
-
-                if (progressValues[buttonIndex] < 100)
-                {
-                    progressValues[buttonIndex]++;
-                    UpdateProgressBar(buttonIndex);
-                }
-            }
-        }
-
-        private void UpdateProgressBar(int index)
-        {
-            switch (index)
-            {
-                case 0:
-                    PrBar1.Value = progressValues[index];
-                    break;
-                case 1:
-                    PrBar2.Value = progressValues[index];
-                    break;
-                case 2:
-                    PrBar3.Value = progressValues[index];
-                    break;
-                case 3:
-                    PrBar4.Value = progressValues[index];
-                    break;
-                case 4:
-                    PrBar5.Value = progressValues[index];
-                    break;
-            }
+            
         }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HorseRacing_Game_WPFApp"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="800">
+        Title="MainWindow" Height="700" Width="800" Background="#B99976">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,35 +17,35 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.2*"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.2*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Horse Racing" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Horse Racing" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+       FontSize="54" FontWeight="Bold" FontFamily="Croissant One"/>
 
-        <ProgressBar x:Name="PrBar1" Grid.Row="1" Grid.Column="2" Height="50" Margin="10"/>
-        <ProgressBar x:Name="PrBar2" Grid.Row="2" Grid.Column="2" Height="50" Margin="10"/>
-        <ProgressBar x:Name="PrBar3" Grid.Row="3" Grid.Column="2" Height="50" Margin="10"/>
-        <ProgressBar x:Name="PrBar4" Grid.Row="4" Grid.Column="2" Height="50" Margin="10"/>
-        <ProgressBar x:Name="PrBar5" Grid.Row="5" Grid.Column="2" Height="50" Margin="10"/>
 
-        <Button Content="Start" Grid.Row="7" Grid.Column="2" Margin="10 0 10 0" Click="StartButton_Click"/>
+        <Line Grid.Row="1" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line Grid.Row="2" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line Grid.Row="3" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line Grid.Row="4" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line Grid.Row="5" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+
+        <Button Grid.Row="7" Grid.Column="1" Content="Start" Background="#664229" Height="60" Width="300" Click="StartButton_Click"
+                Foreground="#E5D3B3"/>
 
         <Popup x:Name="CountdownPopup" IsOpen="False" Placement="Center">
-            <Border BorderBrush="White" BorderThickness="1" Background="White" Width="200" Height="150">
+            <Border BorderBrush="#B99976" BorderThickness="1" Background="#B99976" Width="200" Height="150">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Name="CountdownText" FontSize="48" Foreground="Black" />
+                    <TextBlock Name="CountdownText" FontSize="48" Foreground="White" />
                 </StackPanel>
             </Border>
         </Popup>
 
-        <StackPanel Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-            <Button Width="50" Height="50" Margin="15" Click="Button_Click">
+        <StackPanel Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="Button1" Width="50" Height="50" Margin="15" Tag="1" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
@@ -55,7 +55,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Width="50" Height="50" Margin="15" Click="Button_Click">
+            <Button x:Name="Button2" Width="50" Height="50" Margin="15" Tag="2" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
@@ -65,7 +65,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Width="50" Height="50" Margin="15" Click="Button_Click">
+            <Button x:Name="Button3" Width="50" Height="50" Margin="15" Tag="3" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
@@ -75,7 +75,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Width="50" Height="50" Margin="15" Click="Button_Click">
+            <Button x:Name="Button4" Width="50" Height="50" Margin="15" Tag="4" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
@@ -85,7 +85,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Width="50" Height="50" Margin="15" Click="Button_Click">
+            <Button x:Name="Button5" Width="50" Height="50" Margin="15" Tag="5" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
