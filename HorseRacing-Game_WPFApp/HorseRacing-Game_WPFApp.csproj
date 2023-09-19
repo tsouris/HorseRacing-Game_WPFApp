@@ -9,11 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\luffy.png" />
+    <None Remove="Assets\luffy_sticker.png" />
+    <None Remove="Assets\op_bg.png" />
+    <None Remove="Assets\pngwing.com.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\op_bg.png" />
+    <Resource Include="Assets\pngwing.com.png" />
   </ItemGroup>
 
 </Project>

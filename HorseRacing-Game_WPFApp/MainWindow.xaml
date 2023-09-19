@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:HorseRacing_Game_WPFApp"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="800" Background="#B99976">
+        Title="MainWindow" Height="700" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="./Assets/op_bg.png" Stretch="UniformToFill"/>
+    </Window.Background>
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -26,15 +29,14 @@
         <Label Content="Horse Racing" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
        FontSize="54" FontWeight="Bold" FontFamily="Croissant One"/>
 
+        <Line x:Name="Line1" Grid.Row="1" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line x:Name="Line2" Grid.Row="2" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line x:Name="Line3" Grid.Row="3" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line x:Name="Line4" Grid.Row="4" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line x:Name="Line5" Grid.Row="5" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
 
-        <Line Grid.Row="1" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line Grid.Row="2" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line Grid.Row="3" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line Grid.Row="4" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line Grid.Row="5" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-
-        <Button Grid.Row="7" Grid.Column="1" Content="Start" Background="#664229" Height="60" Width="300" Click="StartButton_Click"
-                Foreground="#E5D3B3"/>
+        <Button x:Name="StartButton" Grid.Row="7" Grid.Column="1" Content="Start" Background="#664229" Height="60" Width="300" Click="StartButton_Click"
+                Foreground="#E5D3B3" FontSize="24"/>
 
         <Popup x:Name="CountdownPopup" IsOpen="False" Placement="Center">
             <Border BorderBrush="#B99976" BorderThickness="1" Background="#B99976" Width="200" Height="150">
