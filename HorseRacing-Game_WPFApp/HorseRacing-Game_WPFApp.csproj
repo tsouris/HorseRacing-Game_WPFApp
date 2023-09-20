@@ -10,9 +10,15 @@
 
   <ItemGroup>
     <None Remove="Assets\luffy.png" />
+    <None Remove="Assets\luffySticker.png" />
     <None Remove="Assets\luffy_sticker.png" />
+    <None Remove="Assets\nami.png" />
     <None Remove="Assets\op_bg.png" />
-    <None Remove="Assets\pngwing.com.png" />
+    <None Remove="Assets\sanji.png" />
+    <None Remove="Assets\ussop.png" />
+    <None Remove="Assets\ussopSticker.png" />
+    <None Remove="Assets\wheel.png" />
+    <None Remove="Assets\zoro.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,12 +26,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Fonts\" />
+    <Resource Include="Assets\luffySticker.png" />
+    <Resource Include="Assets\nami.png" />
+    <Resource Include="Assets\op_bg.png" />
+    <Resource Include="Assets\sanji.png" />
+    <Resource Include="Assets\ussopSticker.png" />
+    <Resource Include="Assets\wheel.png" />
+    <Resource Include="Assets\zoro.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\op_bg.png" />
-    <Resource Include="Assets\pngwing.com.png" />
+    <Folder Include="Fonts\" />
   </ItemGroup>
 
 </Project>

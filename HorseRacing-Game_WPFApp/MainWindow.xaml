@@ -26,14 +26,20 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0.2*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Horse Racing" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
-       FontSize="54" FontWeight="Bold" FontFamily="Croissant One"/>
+        <Label Content="Horse Race" FontFamily="./Fonts/#Skranji-Bold.ttf" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+       FontSize="54" FontWeight="Bold"/>
 
-        <Line x:Name="Line1" Grid.Row="1" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line x:Name="Line2" Grid.Row="2" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line x:Name="Line3" Grid.Row="3" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line x:Name="Line4" Grid.Row="4" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
-        <Line x:Name="Line5" Grid.Row="5" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Black" StrokeThickness="2" />
+        <Line x:Name="Line1" Grid.Row="1" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Red" StrokeThickness="2" />
+        <Line x:Name="Line2" Grid.Row="2" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Green" StrokeThickness="2" />
+        <Line x:Name="Line3" Grid.Row="3" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Orange" StrokeThickness="2" />
+        <Line x:Name="Line4" Grid.Row="4" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Blue" StrokeThickness="2" />
+        <Line x:Name="Line5" Grid.Row="5" Grid.Column="1" X1="0" Y1="50" X2="570" Y2="50" Stroke="Yellow" StrokeThickness="2" />
+
+        <Image x:Name="Luffy" Source="./Assets/luffySticker.png" Grid.ColumnSpan="2" Margin="5,71,407,14" Grid.RowSpan="2"/>
+        <Image x:Name="Zoro" Source="./Assets/zoro.png" Height="100" Grid.ColumnSpan="2" Margin="88,68,486,3" Grid.RowSpan="2" Grid.Row="1"/>
+        <Image x:Name="Nami" Source="./Assets/nami.png" Height="80" Margin="89,0,483,5" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Image x:Name="Ussop" Source="./Assets/ussopSticker.png" Grid.ColumnSpan="2" Margin="85,80,487,5" Grid.RowSpan="2" Grid.Row="3"/>
+        <Image x:Name="Sanji" Source="./Assets/sanji.png" Height="100"  Grid.ColumnSpan="2" Margin="87,81,485,76" Grid.RowSpan="3" Grid.Row="4"/>
 
         <Button x:Name="StartButton" Grid.Row="7" Grid.Column="1" Content="Start" Background="#664229" Height="60" Width="300" Click="StartButton_Click"
                 Foreground="#E5D3B3" FontSize="24"/>
@@ -51,7 +57,7 @@
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
-                            <Ellipse Fill="LightBlue" Width="50" Height="50" />
+                            <Ellipse Fill="Red" Width="50" Height="50" />
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Grid>
                     </ControlTemplate>
@@ -61,7 +67,7 @@
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
-                            <Ellipse Fill="LightBlue" Width="50" Height="50" />
+                            <Ellipse Fill="Green" Width="50" Height="50" />
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Grid>
                     </ControlTemplate>
@@ -71,7 +77,7 @@
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
-                            <Ellipse Fill="LightBlue" Width="50" Height="50" />
+                            <Ellipse Fill="Orange" Width="50" Height="50" />
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Grid>
                     </ControlTemplate>
@@ -81,7 +87,7 @@
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
-                            <Ellipse Fill="LightBlue" Width="50" Height="50" />
+                            <Ellipse Fill="Blue" Width="50" Height="50" />
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Grid>
                     </ControlTemplate>
@@ -91,7 +97,7 @@
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Grid>
-                            <Ellipse Fill="LightBlue" Width="50" Height="50" />
+                            <Ellipse Fill="Yellow" Width="50" Height="50" />
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Grid>
                     </ControlTemplate>
